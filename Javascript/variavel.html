@@ -1,0 +1,27 @@
+<html>
+
+	<head>
+	
+		<title>Javascript</title>
+		
+	</head>
+	
+	<body>
+	
+		<input type="text" id="textoEntrada">
+		<button id="textChange">Mudar o texto</button>
+		<p id="textoMuda">Esse texto tem que ser mudado</p>
+		
+		<script type="text/javascript">
+		
+			document.getElementById("textChange").onclick = function() {
+				var guardaTexto = "";
+				guardaTexto = document.getElementById("textoEntrada").value;
+				document.getElementById("textoMuda").innerHTML = guardaTexto;
+			}
+		
+		</script>
+	
+	</body>
+
+</html>

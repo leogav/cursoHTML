@@ -1,0 +1,34 @@
+<html>
+
+	<head>
+	
+		<title>Javascript</title>
+		
+	</head>
+	
+	<body>
+
+		<div id="tweetDiv"></div>
+		
+		<script type="text/javascript">
+		
+			var tweetString = "";
+			var tweets = ["Miley Cyrus", "Hannah Montana", "Ashley O'", "Destiny Hope"]
+			/*for (var i=2; i>-1; i--) { vai de traz para frente
+			for (var i=0; i<tweets.length; i++) {
+				alert(tweets[i]);
+				tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+			} */
+			
+			var i = 0;
+			while (i < tweets.length) {
+				tweetString = tweetString + "<p>" + tweets[i] + "</p>"
+				i++;
+			}
+			document.getElementById("tweetDiv").innerHTML = tweetString;
+		
+		</script>
+	
+	</body>
+
+</html>

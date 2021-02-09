@@ -1,0 +1,50 @@
+<html>
+
+	<head>
+	
+		<title>Javascript</title>
+		
+	</head>
+	
+	<body>
+	
+		<p>Qual a palavra secreta?</p>
+		<p><input type="text" id="palavraSecreta"></p>
+		<button id="confirmar">Enter</button>
+		
+		<script type="text/javascript">
+		
+			document.getElementById("confirmar").onclick = function() {
+				var textoDigitado = document.getElementById("palavraSecreta").value;
+				
+				var segredo = "amor";
+				
+				if (textoDigitado == segredo) {
+				
+					alert("A palavra secreta esta correta");
+					
+				} else {
+				
+					alert("A palavra secreta esta incorreta");
+					
+				} 
+			}
+		
+		
+			/* var x = 5;
+			
+			if (x == 1) {
+			
+				alert("x é igual a 1");
+			
+			} else {
+			
+				alert("x não é igual a 1");
+			
+			} */
+		
+		</script>
+	
+	</body>
+
+</html>

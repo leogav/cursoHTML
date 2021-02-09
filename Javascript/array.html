@@ -1,0 +1,39 @@
+<html>
+
+	<head>
+	
+		<title>Javascript</title>
+		
+	</head>
+	
+	<body>
+	
+		
+		<script type="text/javascript">
+		
+			var myArray = new Array();
+			
+			myArray[0] = "pizza";
+			myArray[1] = "chocolate";
+			myArray[2] = "refrigerante";
+			
+			alert(myArray[1]);
+			
+			console.log(myArray);
+			
+			var tweets = ["Eu amo pizza", "Quero passear no parque"];
+			
+			tweets.push("Eu prefiro a cidade"); //acrescenta novo elemento
+			
+			// tweets.splice(1,2); //começa a deletar do 1 ate o segundo
+			// tweets.splice(1, 0, "Otimo dia para comer") // começa no 1  nao elimina nenhum elemento e acrescenta elemento antes do 1
+			// tweets.splice(1, 1, "Otimo dia para comer") // substitui o elemento 1
+			tweets.splice(1, 1, "Otimo dia para comer", "seu cuzinho") // substitui o elemento 1 e acrescenta outro
+			
+			console.log(tweets); //exibe array no console
+		
+		</script>
+	
+	</body>
+
+</html>

@@ -1,0 +1,56 @@
+<html>
+
+	<head>
+	
+		<title>Javascript</title>
+		
+	</head>
+	
+	<body>
+
+		<p>Quantos dedos estou levantando?</p>
+		
+		<p><select id="texto">
+			
+			<option>0</option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+		<button id="guess">Adivinha</button></p>
+		
+		
+		<script type="text/javascript">
+		
+			document.getElementById("guess").onclick = function() {
+			
+				var myNumber = document.getElementById("texto").value;
+				var conseguiu = false;
+				var nroAdivinhos = 1;
+				
+				while (conseguiu == false) {
+				
+					var acertar = Math.floor(Math.random()*6);
+					
+					if (acertar == myNumber ) {
+					
+						conseguiu = true;
+						alert("Você acertou. Na jogada " + nroAdivinhos + ". A quantidade de dedos eram " + myNumber);
+					
+					} else {
+					
+						nroAdivinhos ++;
+					
+					}
+				
+				}
+			
+			}
+		
+		</script>
+	
+	</body>
+
+</html>

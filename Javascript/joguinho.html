@@ -1,0 +1,39 @@
+<html>
+
+	<head>
+	
+		<title>Javascript</title>
+		
+	</head>
+	
+	<body>
+	
+		<p>Quantos dedos estou mostrando?</p>
+		<p><input type="text" id="numero"></p>
+		<button id="confirmar">Enter</button>
+		
+		<script type="text/javascript">
+		
+			document.getElementById("confirmar").onclick = function() {
+			
+				var numEntrada = document.getElementById("numero").value;
+				
+				var numDedos = Math.floor(Math.random() * 6);
+				
+				if (numEntrada == numDedos) {
+				
+					alert("Voce acertou, eu levantei " + numDedos + " dedo(s)");
+				
+				} else {
+				
+					alert("Voce errou, eu levantei " +numDedos+ " dedo(s)")
+				
+				}
+			
+			}
+		
+		</script>
+	
+	</body>
+
+</html>

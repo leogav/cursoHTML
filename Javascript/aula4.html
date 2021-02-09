@@ -1,0 +1,55 @@
+<html>
+
+	<head>
+	
+		<title>Javascript</title>
+		
+	</head>
+	
+	<body>
+	
+		<p id="text">Se clicar no botao o texto muda</p>
+		<button id="myButton">Clica aqui!!</button>
+		
+		<p id=secondParagraph>Javascript é ...</p>
+		<button id="secondButton">Adiciona texto</button>
+		
+		<p id="emptyParagraph"></p>
+		<button id="criaParagrafo">Acrescenta novo texto</button>
+		
+		<p id="newText">Um novo texto q muda a cor</p>
+		<button id="addStyle">Acrescenta nova cor</button>
+		
+		<script type="text/javascript">
+		
+			document.getElementById("myButton").onclick = function() {
+			
+				alert("O texto vai mudar");
+				document.getElementById("text").innerHTML = "Mudou o texto";
+			
+			}
+			
+			document.getElementById("secondButton").onclick = function() {
+			
+				document.getElementById("secondParagraph").innerHTML = document.getElementById("secondParagraph").innerHTML + " Legal";
+			
+			}
+			
+			document.getElementById("criaParagrafo").onclick = function() {
+			
+				document.getElementById("emptyParagraph").innerHTML = "<h1>Novo texto criado</h1>";
+			
+			}
+			
+			document.getElementById("addStyle").onclick = function () {
+			
+				document.getElementById("newText").style.color = "pink";
+				document.getElementById("newText").style.fontSize = "30px";
+			
+			}
+		
+		</script>
+	
+	</body>
+
+</html>
