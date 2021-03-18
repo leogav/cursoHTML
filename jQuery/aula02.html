@@ -1,0 +1,52 @@
+<html>
+
+	<head>
+	
+		<title>jQuery</title>
+		
+		<script type="text/javascript" src="jquery.min.js"></script>
+		
+		<style type="text/css">
+		
+			#circulo {
+				width:150px;
+				height:150px;
+				border-radius:50%;
+				background-color:pink;
+				margin: 10px;
+			}
+			
+			.quadrado {
+				width:150px;
+				height:150px;
+				background-color:blue;
+				margin: 10px;
+			}
+		
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<h1>Quadrados e Circulo</h1>
+		<div id="circulo"></div>
+		<div class="quadrado"></div>
+		
+		<script type="text/javascript">
+
+			$("#circulo").click(function() {
+				alert("O circulo foi clicado");
+			})
+			$(".quadrado").click(function() {
+				alert("O quadrado foi clicado");
+			})
+			$("h1").click(function() {
+				alert("O titulo foi clicado");
+			})
+		
+		</script>
+	
+	</body>
+
+</html>
