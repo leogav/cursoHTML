@@ -1,0 +1,31 @@
+<html>
+
+	<head>
+	
+		<title>AJAX</title>
+		
+		<script type="text/javascript" src="jquery.min.js"></script>
+		
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<p></p>
+		
+		<script type="text/javascript">
+			
+           /* $.get("texto.txt", function(data) {					//pega o texto do arquivo txt
+                alert(data);
+            }); */
+			
+			$.ajax("texto.txt").done(function(data) {
+				$("p").html(data);							//coloca o texto no paragrafo em branco
+			}).fail(function {								//condição caso o arquivo nao exista ou esteja com problema
+				alert("Arquivo não encontrado");
+			});
+
+		</script>
+	
+	</body>
